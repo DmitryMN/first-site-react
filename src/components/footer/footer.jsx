@@ -1,23 +1,24 @@
 import React from 'react';
-import instagram from '../images/icons/instagram.svg';
-import facebook from '../images/icons/facebook.svg';
-import vk from '../images/icons/vk.svg';
-import linkedin from '../images/icons/linkedin.svg';
-import github from '../images/icons/github.svg';
+import footerCss from './footer.module.css';
+import instagram from '../../images/icons/instagram.svg';
+import facebook from '../../images/icons/facebook.svg';
+import vk from '../../images/icons/vk.svg';
+import linkedin from '../../images/icons/linkedin.svg';
+import github from '../../images/icons/github.svg';
 
 
 const Footer = () => {
     return(
-        <footer className="footer">
-            <div className=" conteiner">
-                <div className="footer-wrapper">
-                    <div className="footer-copyright footer-col">
-                        <div className="footer-copyright-name">© Дмитрий Маленков</div>
+        <footer className={footerCss.footer}>
+            <div className="conteiner">
+                <div className={footerCss.footer_wrapper}>
+                    <div className={`${footerCss.footer_copyright} ${footerCss.footer_col}`}>
+                        <div className={footerCss.footer_copyright_name}>© Дмитрий Маленков</div>
                         <p>HTML верстка и разработка сайтов</p>
                     </div>
-                    <div className="footer-icons footer-col">
+                    <div className={`${footerCss.footer_icons} ${footerCss.footer_col}`}>
                         <p>Мои профили в соцсетях</p>
-                        <div className="icons-wrapper">
+                        <div className={footerCss.icons_wrapper}>
                             <a href="/#">
                                 <img src={instagram} alt="instagram"/>
                             </a>
@@ -35,8 +36,8 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="footer-contacts footer-col">
-                        <a href="/#" className="footer-button">
+                    <div className={`${footerCss.footer_contacts} ${footerCss.footer_col}`}>
+                        <a href="/#" className={footerCss.footer_button}>
                             Связаться в контакте
                         </a>
                         <p>Напишите мне, чтобы заказать или узнать стоимость верстки вашего проекта</p>
